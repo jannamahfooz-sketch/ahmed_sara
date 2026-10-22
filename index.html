@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>إلى شريكة حياتي وأم ابني ❤️</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&family=Marhey:wght@600;700&family=Amiri:ital,wght@0,700;1,400&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --burgundy-dark: #2a0208;
+            --burgundy-velvet: #480612;
+            --burgundy-rich: #670d1e;
+            --burgundy-card: rgba(42, 2, 8, 0.75);
+            
+            --cream-soft: #fcf8f2;
+            --cream-gold: #f4ebd9;
+            --cream-card: rgba(254, 250, 244, 0.95);
+            
+            --gold-glow: #e5b95c;
+            --gold-gradient: linear-gradient(135deg, #ffe29f 0%, #d4af37 50%, #8a6218 100%);
+            --shadow-cinema: 0 20px 45px rgba(28, 1, 6, 0.35);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background: radial-gradient(circle at 50% 20%, #480612 0%, #2a0208 60%, #150004 100%);
+            min-height: 100vh;
+            color: var(--cream-soft);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        #dustCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .lang-switch-btn {
+            position: fixed;
+            top: 18px;
+            right: 18px;
+            z-index: 1500;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(15px);
+            border: 1.5px solid var(--gold-glow);
+            padding: 8px 18px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            font-weight: 800;
+            font-size: 13px;
+            color: var(--gold-glow);
+            transition: 0.3s;
+        }
+
+        .lang-switch-btn:hover {
+            background: var(--gold-gradient);
+            color: var(--burgundy-dark);
+            transform: scale(1.05);
+        }
+
+        .mobile-wrapper {
+            width: 100%;
+            max-width: 440px;
+            margin: 0 auto;
+            min-height: 100vh;
+            padding: 20px 16px 130px 16px;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* ================= 1. شاشة القفل المودرن ================= */
+        #lockScreen {
+            width: 100%;
+            min-height: 92vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-editorial-card {
+            background: linear-gradient(180deg, rgba(72, 6, 18, 0.85) 0%, rgba(30, 1, 6, 0.95) 100%);
+            border: 1.5px solid rgba(229, 185, 92, 0.4);
+            border-radius: 40px;
+            padding: 45px 22px 35px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+            backdrop-filter: blur(20px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            padding: 5px;
+            background: var(--gold-gradient);
+            box-shadow: 0 0 35px rgba(229, 185, 92, 0.4);
+            animation: breatheGlow 4s infinite alternate;
+        }
+
+        @keyframes breatheGlow {
+            0% { transform: scale(1); box-shadow: 0 0 25px rgba(229, 185, 92, 0.3); }
+            100% { transform: scale(1.04); box-shadow: 0 0 45px rgba(229, 185, 92, 0.6); }
+        }
+
+        .hero-avatar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--burgundy-dark);
+        }
+
+        .hero-title {
+            font-family: 'Amiri', serif;
+            font-size: 27px;
+            font-weight: 700;
+            color: var(--cream-soft);
+            line-height: 1.4;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .hero-subtitle {
+            font-size: 14.5px;
+            color: var(--gold-glow);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 30px;
+        }
+
+        .modern-pass-box {
+            position: relative;
+            width: 85%;
+            margin: 0 auto 22px;
+        }
+
+        .modern-input {
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 30px;
+            border: 1.5px solid rgba(229, 185, 92, 0.4);
+            outline: none;
+            text-align: center;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            backdrop-filter: blur(10px);
+            transition: 0.3s;
+        }
+
+        .modern-input:focus {
+            border-color: var(--gold-glow);
+            box-shadow: 0 0 20px rgba(229, 185, 92, 0.4);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .modern-btn {
+            background: var(--gold-gradient);
+            color: var(--burgundy-dark);
+            border: none;
+            padding: 15px 45px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 900;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.35);
+            transition: 0.3s transform;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .modern-btn:active {
+            transform: scale(0.96);
+        }
+
+        /* ================= 2. الشاشة الرئيسية والذكريات ================= */
+        #mainTimeline {
+            display: none;
+            width: 100%;
+            flex-direction: column;
+            gap: 28px;
+            animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .card-custom {
+            background: linear-gradient(180deg, rgba(255, 253, 249, 0.97) 0%, rgba(247, 238, 225, 0.97) 100%);
+            border-radius: 34px;
+            border: 1.5px solid var(--gold-glow);
+            padding: 22px 18px;
+            box-shadow: var(--shadow-cinema);
+            text-align: center;
+            position: relative;
+            color: var(--burgundy-dark);
+        }
+
+        .card-custom::after {
+            content: '';
+            position: absolute;
+            inset: 6px;
+            border: 1px dashed rgba(103, 13, 30, 0.2);
+            border-radius: 28px;
+            pointer-events: none;
+        }
+
+        /* ================= تصميم عداد الوقت ================= */
+        .royal-timer-card {
+            background: linear-gradient(145deg, #3d050f 0%, #200106 100%);
+            border: 2px solid var(--gold-glow);
+            border-radius: 38px;
+            padding: 28px 18px 25px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.55);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        .royal-timer-card::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 100px;
+            background: radial-gradient(ellipse, rgba(229, 185, 92, 0.25) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .timer-header-title {
+            font-family: 'Amiri', serif;
+            font-size: 24px;
+            color: var(--gold-glow);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 4px;
+        }
+
+        .timer-header-date {
+            font-size: 13px;
+            color: #ecd8be;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+            margin-bottom: 22px;
+        }
+
+        /* الكبسولات الدائرية الفاخرة للعداد */
+        .timer-orbs-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 8px;
+            margin: 15px 0 20px;
+        }
+
+        .time-orb {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.12), rgba(0, 0, 0, 0.45));
+            border: 1.5px solid var(--gold-glow);
+            border-radius: 22px;
+            padding: 14px 4px;
+            box-shadow: inset 0 0 15px rgba(229, 185, 92, 0.15), 0 8px 18px rgba(0,0,0,0.3);
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .time-orb:hover {
+            transform: translateY(-3px);
+            border-color: #fff;
+        }
+
+        .orb-value {
+            font-family: 'Cinzel', serif;
+            font-size: 25px;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 0 0 12px rgba(229, 185, 92, 0.8);
+            line-height: 1.1;
+        }
+
+        .orb-label {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--gold-glow);
+            margin-top: 5px;
+            text-transform: uppercase;
+        }
+
+        /* شريط نبض الثواني الحي */
+        .live-pulse-wrapper {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 6px 18px;
+            border-radius: 20px;
+            border: 1px solid rgba(229, 185, 92, 0.3);
+            font-size: 12.5px;
+            color: #ffe6bd;
+            font-weight: 600;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background: #25d366;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #25d366;
+            animation: liveBlink 1.4s infinite;
+        }
+
+        @keyframes liveBlink {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.3; transform: scale(0.8); }
+        }
+
+        .badge-royal {
+            background: linear-gradient(135deg, var(--burgundy-rich), var(--burgundy-dark));
+            color: var(--gold-glow);
+            border-radius: 25px;
+            padding: 8px 25px;
+            display: inline-block;
+            font-weight: 800;
+            font-size: 14.5px;
+            margin-top: 6px;
+            border: 1px solid var(--gold-glow);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* إطارات الصور والفيديو */
+        .media-frame {
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(42, 2, 8, 0.25);
+            background: #000;
+            border: 2.5px solid var(--gold-glow);
+            position: relative;
+            z-index: 2;
+        }
+
+        .media-frame img, .media-frame video {
+            width: 100%;
+            height: auto;
+            max-height: 430px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .caption-text {
+            background: #ffffff;
+            margin-top: 15px;
+            padding: 13px 20px;
+            border-radius: 22px;
+            color: var(--burgundy-dark);
+            font-weight: 800;
+            font-size: 15.5px;
+            border: 1.5px solid rgba(212, 175, 55, 0.4);
+            display: inline-block;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        }
+
+        /* معادلة الحب S + A = Z */
+        .love-equation-card {
+            background: linear-gradient(135deg, rgba(72, 6, 18, 0.95) 0%, rgba(35, 1, 7, 0.98) 100%);
+            border: 2px solid var(--gold-glow);
+            border-radius: 38px;
+            padding: 30px 15px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .equation-title {
+            color: var(--gold-glow);
+            font-size: 18px;
+            font-weight: 800;
+            margin-bottom: 25px;
+        }
+
+        .equation-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .heart-node {
+            width: 72px;
+            height: 72px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 2px solid var(--gold-glow);
+            border-radius: 50% 50% 50% 10%;
+            transform: rotate(-45deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 20px rgba(229, 185, 92, 0.3);
+            animation: heartPulse 2.2s infinite ease-in-out;
+            position: relative;
+        }
+
+        .heart-node span {
+            transform: rotate(45deg);
+            font-family: 'Cinzel', serif;
+            font-size: 26px;
+            font-weight: 900;
+            color: var(--gold-glow);
+            text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+        }
+
+        .heart-node.final-node {
+            width: 85px;
+            height: 85px;
+            background: var(--gold-gradient);
+            border-color: #fff;
+            box-shadow: 0 0 30px rgba(229, 185, 92, 0.7);
+        }
+
+        .heart-node.final-node span {
+            color: var(--burgundy-dark);
+            font-size: 32px;
+        }
+
+        .math-symbol {
+            font-size: 26px;
+            font-weight: 900;
+            color: var(--gold-glow);
+            text-shadow: 0 0 10px rgba(229, 185, 92, 0.5);
+        }
+
+        @keyframes heartPulse {
+            0%, 100% { transform: rotate(-45deg) scale(1); }
+            50% { transform: rotate(-45deg) scale(1.08); }
+        }
+
+        .equation-hint {
+            font-size: 13.5px;
+            color: #ecd8be;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .promises-card {
+            text-align: right;
+            line-height: 2.1;
+            color: var(--burgundy-dark);
+            font-size: 15px;
+            font-weight: 600;
+            position: relative;
+            z-index: 2;
+        }
+
+        html[dir="ltr"] .promises-card {
+            text-align: left;
+        }
+
+        .promises-card p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .promises-card p i {
+            color: var(--gold-glow);
+            font-size: 16px;
+        }
+
+        /* المودال */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(15, 0, 3, 0.85);
+            backdrop-filter: blur(12px);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            padding: 20px;
+        }
+
+        .modal-content {
+            background: linear-gradient(180deg, #fffdf9 0%, #f7ebd9 100%);
+            border-radius: 38px;
+            border: 2.5px solid var(--gold-glow);
+            padding: 40px 25px 30px;
+            max-width: 390px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+            animation: popUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+        }
+
+        @keyframes popUp {
+            from { transform: scale(0.75); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .close-modal-btn {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--burgundy-dark);
+            border: 1px solid var(--gold-glow);
+            color: var(--gold-glow);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        /* مشغل الصوت */
+        .sticky-player {
+            position: fixed;
+            bottom: 14px;
+            width: calc(100% - 32px);
+            max-width: 410px;
+            background: rgba(35, 1, 7, 0.92);
+            backdrop-filter: blur(20px);
+            border: 1.5px solid var(--gold-glow);
+            border-radius: 40px;
+            padding: 10px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+        }
+
+        .player-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .rotating-disc {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--gold-glow);
+            animation: rotateDisc 8s linear infinite;
+            animation-play-state: paused;
+        }
+
+        @keyframes rotateDisc {
+            100% { transform: rotate(360deg); }
+        }
+
+        .song-details {
+            text-align: right;
+        }
+
+        html[dir="ltr"] .song-details {
+            text-align: left;
+        }
+
+        .song-title {
+            font-size: 13.5px;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        .song-timer {
+            font-size: 11px;
+            color: var(--gold-glow);
+            direction: ltr;
+        }
+
+        .play-btn-circle {
+            background: var(--gold-gradient);
+            color: var(--burgundy-dark);
+            border: none;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(229, 185, 92, 0.4);
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="dustCanvas"></canvas>
+
+    <button class="lang-switch-btn" onclick="toggleLanguage()">
+        <i class="fa-solid fa-globe"></i>
+        <span id="langBtnText">Українська 🇺🇦</span>
+    </button>
+
+    <div class="mobile-wrapper">
+
+        <!-- ================= 1. شاشة القفل ================= -->
+        <div id="lockScreen">
+            <div class="hero-editorial-card">
+                <div class="hero-avatar">
+                    <img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.16 PM (2).jpeg" alt="Avatar">
+                </div>
+                
+                <h1 class="hero-title" data-ar="منّي إلى شريكة حياتي وأم ابني ❤️" data-ua="Від мене моїй супутниці життя та матері мого сина ❤️">
+                    منّي إلى شريكة حياتي وأم ابني ❤️
+                </h1>
+
+                <p class="hero-subtitle" data-ar="كل ذكرياتنا وتفاصيلنا الحلوة هنا ✨" data-ua="Всі наші прекрасні спогади тут ✨">
+                    كل ذكرياتنا وتفاصيلنا الحلوة هنا ✨
+                </p>
+
+                <div class="modern-pass-box">
+                    <input type="password" id="passCode" class="modern-input" placeholder="Password" data-ar-ph="اكتبي كلمة السر (love)" data-ua-ph="Введіть пароль (love)">
+                </div>
+
+                <button class="modern-btn" onclick="unlockPage()">
+                    <span data-ar="افتحي قلبي 🗝️" data-ua="Відкрий моє серце 🗝️">افتحي قلبي 🗝️</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- ================= 2. الشاشة الرئيسية والذكريات ================= -->
+        <div id="mainTimeline">
+
+            <!-- كارت صورة الغلاف الترحيبية -->
+            <div class="card-custom">
+                <div class="media-frame">
+                    <img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 8.29.26 PM.jpeg" alt="Cover">
+                </div>
+                <div class="badge-royal" data-ar="بحبك ❤️" data-ua="Кохаю тебе ❤️">بحبك ❤️</div>
+            </div>
+
+            <!-- ================= كارت عداد الوقت الملكي ================= -->
+            <div class="royal-timer-card">
+                <div class="timer-header-title">
+                    <i class="fa-solid fa-hourglass-half"></i>
+                    <span data-ar="بداية حكايتنا وسنين حبنا" data-ua="Початок нашої історії кохання">بداية حكايتنا وسنين حبنا</span>
+                </div>
+                <div class="timer-header-date" data-ar="سوا بكل حب من: 17-3-2021" data-ua="Разом у коханні з: 17-3-2021">
+                    سوا بكل حب من: 17-3-2021
+                </div>
+
+                <div class="timer-orbs-container">
+                    <div class="time-orb">
+                        <div class="orb-value" id="d-val">00</div>
+                        <div class="orb-label" data-ar="يوم" data-ua="Днів">يوم</div>
+                    </div>
+                    <div class="time-orb">
+                        <div class="orb-value" id="h-val">00</div>
+                        <div class="orb-label" data-ar="ساعة" data-ua="Годин">ساعة</div>
+                    </div>
+                    <div class="time-orb">
+                        <div class="orb-value" id="m-val">00</div>
+                        <div class="orb-label" data-ar="دقيقة" data-ua="Хвилин">دقيقة</div>
+                    </div>
+                    <div class="time-orb">
+                        <div class="orb-value" id="s-val">00</div>
+                        <div class="orb-label" data-ar="ثانية" data-ua="Секунд">ثانية</div>
+                    </div>
+                </div>
+
+                <div class="live-pulse-wrapper">
+                    <span class="pulse-dot"></span>
+                    <span data-ar="نبض حبنا مستمر في كل ثانية" data-ua="Пульс нашого кохання б'ється щосекунди">نبض حبنا مستمر في كل ثانية</span>
+                </div>
+            </div>
+
+            <!-- صورة 3: حياتي معك احلي حياه -->
+            <div class="card-custom">
+                <div class="media-frame">
+                    <img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.22 PM.jpeg" alt="Memory 3">
+                </div>
+                <div class="caption-text" data-ar="حياتي معك أحلى حياة 🥰" data-ua="Моє життя з тобою — найпрекрасніше 🥰">حياتي معك أحلى حياة 🥰</div>
+            </div>
+
+            <!-- صورة 2: بداية -->
+            <div class="card-custom">
+                <div class="media-frame">
+                    <img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.16 PM (1).jpeg" alt="Memory 2">
+                </div>
+                <div class="caption-text" data-ar="بداية 🌹" data-ua="Початок 🌹">بداية 🌹</div>
+            </div>
+ <div class="card-custom">
+                <div class="media-frame">
+                    <img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.21 PM (3).jpeg" alt="Cover">
+                </div>
+                <div class="badge-royal" data-ar="بحبك ❤️" data-ua="Кохаю тебе ❤️">بحبك ❤️</div>
+            </div>
+
+            <!-- صورة 4: حته مني -->
+            <div class="card-custom">
+                <div class="media-frame">
+                    <img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.19 PM (1).jpeg" alt="Memory 4">
+                </div>
+                <div class="caption-text" data-ar="حتة مني 🤍" data-ua="Частинка мене 🤍">حتة مني 🤍</div>
+            </div>
+
+            <!-- فيديو 1 -->
+            <div class="card-custom">
+                <div class="media-frame">
+                    <video controls playsinline poster="d:\Desktop\ahmed_sara\Screenshot 2026-10-22 200702.png">
+                        <source src="d:\Desktop\ahmed_sara\WhatsApp Video 2026-10-22 at 6.37.18 PM.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="caption-text" data-ar="بحب كل حاجة فيكي 🎥❤️" data-ua="Я люблю все в тобі 🎥❤️">بحب كل حاجة فيكي 🎥❤️</div>
+            </div>
+
+            <!-- فيديو 2 -->
+            <div class="card-custom">
+                <div class="media-frame">
+                    <video controls playsinline poster="d:\Desktop\ahmed_sara\Screenshot 2026-10-22 195838.png">
+                        <source src="d:\Desktop\ahmed_sara\WhatsApp Video 2026-10-22 at 6.37.19 PM.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="caption-text" data-ar="كل حياتي في فيديو واحد 🎬✨" data-ua="Все моє життя в одному відео 🎬✨">كل حياتي في فيديو واحد 🎬✨</div>
+            </div>
+
+            <!-- صورة 5: ابني وكل حياتي -->
+            <div class="card-custom">
+                <div class="media-frame">
+                    <img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.19 PM (4).jpeg" alt="Memory 5">
+                </div>
+                <div class="caption-text" data-ar="ابني وكل حياتي 👶👑" data-ua="Мій син і все моє життя 👶👑">ابني وكل حياتي 👶👑</div>
+            </div>
+
+            <!-- صورة 6: عائلتي الصغيره -->
+            <div class="card-custom">
+                <div class="media-frame">
+                    <img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.19 PM (3).jpeg" alt="Memory 6">
+                </div>
+                <div class="caption-text" data-ar="عائلتي الصغيرة 👨‍👩‍👦❤️" data-ua="Моя маленька родина 👨‍👩‍👦❤️">عائلتي الصغيرة 👨‍👩‍👦❤️</div>
+            </div>
+
+            <!-- صورة 7: ورده بتتصور مع ورده -->
+            <div class="card-custom">
+                <div class="media-frame">
+                    <img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.21 PM (1).jpeg" alt="Memory 7">
+                </div>
+                <div class="caption-text" data-ar="وردة بتتصور مع وردة 🌹🌸" data-ua="Троянда фотографується з трояндою 🌹🌸">وردة بتتصور مع وردة 🌹🌸</div>
+            </div>
+
+            <!-- صورة 8: حب حياتي -->
+            <div class="card-custom">
+                <div class="media-frame">
+                    <img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.16 PM (4).jpeg" alt="Memory 8">
+                </div>
+                <div class="caption-text" data-ar="حب حياتي 💍❤️" data-ua="Кохання всього мого життя 💍❤️">حب حياتي 💍❤️</div>
+            </div>
+
+            <!-- صورة 9: حبيب قلبي ونور عيوني -->
+            <div class="card-custom">
+                <div class="media-frame">
+                    <img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.16 PM (3).jpeg" alt="Memory 9">
+                </div>
+                <div class="caption-text" data-ar="حبيب قلبي ونور عيوني ✨👀" data-ua="Кохання мого серця і світло моїх очей ✨👀">حبيب قلبي ونور عيوني ✨👀</div>
+            </div>
+
+            <!-- صورة 10: يوم من اجمل ايامي -->
+            <div class="card-custom">
+                <div class="media-frame">
+                    <img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.19 PM.jpeg" alt="Memory 10">
+                </div>
+                <div class="caption-text" data-ar="يوم من أجمل أيامي 🗓️💖" data-ua="Один із найкращих днів мого життя 🗓️💖">يوم من أجمل أيامي 🗓️💖</div>
+            </div>
+
+            <!-- صورة 11: احلي صوره مع احلي بنت شافتها عينني -->
+            <div class="card-custom">
+                <div class="media-frame">
+                    <img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.20 PM (3).jpeg" alt="Memory 11">
+                </div>
+                <div class="caption-text" data-ar="أحلى صورة مع أحلى بنت شافتها عيني 😍👑" data-ua="Найкраще фото з найпрекраснішою дівчиною, яку бачили мої очі 😍👑">أحلى صورة مع أحلى بنت شافتها عيني 😍👑</div>
+            </div>
+
+            <!-- بقية الصور -->
+            <div class="card-custom"><div class="media-frame"><img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.16 PM.jpeg" alt="Memory 12"></div></div>
+            <div class="card-custom"><div class="media-frame"><img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.19 PM (2).jpeg" alt="Memory 13"></div></div>
+            <div class="card-custom"><div class="media-frame"><img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.21 PM.jpeg" alt="Memory 14"></div></div>
+            <div class="card-custom"><div class="media-frame"><img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.21 PM (4).jpeg" alt="Memory 15"></div></div>
+            <div class="card-custom"><div class="media-frame"><img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.20 PM (2).jpeg" alt="Memory 16"></div></div>
+            <div class="card-custom"><div class="media-frame"><img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.20 PM.jpeg" alt="Memory 17"></div></div>
+            <div class="card-custom"><div class="media-frame"><img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.22 PM (1).jpeg" alt="Memory 18"></div></div>
+
+            <!-- كارت الوعود الملكي -->
+            <div class="card-custom promises-card">
+                <h4 style="text-align:center; color:var(--burgundy-rich); margin-bottom:15px; font-size: 20px; font-weight:800;" data-ar="بس عايزك تعرفي! ❤️" data-ua="Просто хочу, щоб ти знала! ❤️">بس عايزك تعرفي! ❤️</h4>
+                
+                <p><i class="fa-solid fa-heart"></i> <span data-ar="إني هفضل دايماً بحبك." data-ua="Я завжди буду тебе кохати.">إني هفضل دايماً بحبك.</span></p>
+                <p><i class="fa-solid fa-shield-heart"></i> <span data-ar="هفضل دايماً أكتر حد بيخاف وهيفضل يخاف عليكي وعلى ابننا." data-ua="Я завжди буду тим, хто найбільше піклується про тебе і нашого сина.">هفضل دايماً أكتر حد بيخاف وهيفضل يخاف عليكي وعلى ابننا.</span></p>
+                <p><i class="fa-solid fa-star"></i> <span data-ar="إنك هتفضلي أحلى حاجة حصلتلي في حياتي كلها." data-ua="Ти завжди будеш найкращим, що сталося в моєму житті.">إنك هتفضلي أحلى حاجة حصلتلي في حياتي كلها.</span></p>
+                <p><i class="fa-solid fa-infinity"></i> <span data-ar="وإني لو أقدر أعمل أي حاجة في الدنيا عشانك هعملها." data-ua="І якщо я можу зробити щось у цьому світі для тебе, я зроблю це.">وإني لو أقدر أعمل أي حاجة في الدنيا عشانك هعملها.</span></p>
+            </div>
+
+            <!-- معادلة الحب S + A = Z -->
+            <div class="love-equation-card" onclick="triggerLoveEquation()">
+                <div class="equation-title" data-ar="سر حكايتنا وسر وجودنا 👑✨" data-ua="Таємниця нашої історії та життя 👑✨">سر حكايتنا وسر وجودنا 👑✨</div>
+                
+                <div class="equation-row">
+                    <div class="heart-node">
+                        <span>S</span>
+                    </div>
+
+                    <div class="math-symbol">+</div>
+
+                    <div class="heart-node">
+                        <span>A</span>
+                    </div>
+
+                    <div class="math-symbol">=</div>
+
+                    <div class="heart-node final-node">
+                        <span>Z</span>
+                    </div>
+                </div>
+
+                <div class="equation-hint" data-ar="اضغطي على قلوبنا وشوفي المفاجأة 👆❤️" data-ua="Натисни на наші серця і побач сюрприз 👆❤️">
+                    اضغطي على قلوبنا وشوفي المفاجأة 👆❤️
+                </div>
+            </div>
+
+        </div>
+
+        <!-- المودال الملكي -->
+        <div class="modal-overlay" id="secretModal">
+            <div class="modal-content">
+                <button class="close-modal-btn" onclick="closeSecretMessage()">✕</button>
+                <div style="font-size: 40px; margin-bottom: 8px;">👑❤️👶</div>
+                <h3 style="color: var(--burgundy-rich); font-size: 22px; font-weight:900; margin-bottom: 12px;" data-ar="حُبنا أثمر بأغلى ما نملك" data-ua="Наше кохання подарувало нам найдорожче">حُبنا أثمر بأغلى ما نملك</h3>
+                
+                <p style="color: var(--burgundy-dark); font-size: 15.5px; line-height: 2; font-weight: 700;" data-ar="حرف S وحرف A اتجمعوا على حب صادق، وربنا رزقنا بأجمل هدية في الدنيا (ابننا Z).. إنتوا الاتنين كل دنيتي، وسندي، وأجمل عائلة ربنا يحفظكم ليا طول عمري." data-ua="Букви S та A об'єдналися в щирому коханні, і Бог подарував нам найпрекрасніший подарунок у світі (нашого сина Z).. Ви двоє — весь мій світ і моя родина. Нехай Бог береже вас для мене назавжди.">
+                    حرف S وحرف A اتجمعوا على حب صادق، وربنا رزقنا بأجمل هدية في الدنيا (ابننا Zain).. إنتوا الاتنين كل دنيتي، وسندي، وأجمل عائلة ربنا يحفظكم ليا طول عمري.
+                </p>
+                
+                <div class="badge-royal" style="margin-top: 20px;" data-ar="عائلتي إلى الأبد ♾️👑" data-ua="Моя родина назавжди ♾️👑">عائلتي إلى الأبد ♾️👑</div>
+            </div>
+        </div>
+
+        <!-- مشغل الموسيقى -->
+        <div class="sticky-player">
+            <div class="player-left">
+                <img src="d:\Desktop\ahmed_sara\WhatsApp Image 2026-10-22 at 6.37.16 PM.jpeg" class="rotating-disc" id="albumArt" alt="Cover">
+                <div class="song-details">
+                    <div class="song-title" data-ar="حبك كل يوم بيزيد ❤️" data-ua="Кохання до тебе зростає щодня ❤️">حبك كل يوم بيزيد ❤️</div>
+                    <div class="song-timer" id="timeDisplay">0:00 / 0:00</div>
+                </div>
+            </div>
+            
+            <button class="play-btn-circle" onclick="togglePlayMusic()">
+                <i class="fa-solid fa-play" id="audioIcon"></i>
+            </button>
+
+            <audio id="bgSong" src="d:\Desktop\ahmed_sara\music\Albumaty.Com_wail_gsar_hlm_hyati_-_mn_fylm_twam_hyaty.mp3" preload="metadata"></audio>
+        </div>
+
+    </div>
+
+    <script>
+        // مؤثرات غبار الذهب
+        const canvas = document.getElementById('dustCanvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        class Sparkle {
+            constructor() { this.reset(); }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2.5 + 0.8;
+                this.speedY = Math.random() * 0.8 + 0.2;
+                this.speedX = (Math.random() - 0.5) * 0.4;
+                this.opacity = Math.random() * 0.8 + 0.2;
+                this.color = Math.random() > 0.4 ? '229, 185, 92' : '156, 28, 51';
+            }
+            update() {
+                this.y -= this.speedY;
+                this.x += this.speedX;
+                if (this.y < 0) this.y = canvas.height;
+                if (this.x < 0 || this.x > canvas.width) this.x = Math.random() * canvas.width;
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(${this.color}, ${this.opacity})`;
+                ctx.shadowBlur = 10;
+                ctx.shadowColor = `rgba(${this.color}, 0.8)`;
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < 45; i++) particles.push(new Sparkle());
+
+        function renderCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => { p.update(); p.draw(); });
+            requestAnimationFrame(renderCanvas);
+        }
+        renderCanvas();
+
+        function unlockPage() {
+            const entered = document.getElementById('passCode').value.trim().toLowerCase();
+            if (entered === 'love' || entered === 'حب') {
+                document.getElementById('lockScreen').style.display = 'none';
+                document.getElementById('mainTimeline').style.display = 'flex';
+                startMusic();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+                alert(currentLang === 'ar' ? 'كلمة السر غير صحيحة يا روحي! اكتبي: love ❤️' : 'Невірний пароль, кохана! Введіть: love ❤️');
+            }
+        }
+
+        // عداد الوقت الحي (تم التعديل لتاريخ 17-3-2021)
+        const startDate = new Date(2021, 2, 17, 0, 0, 0);
+
+        function refreshCounter() {
+            const now = new Date();
+            const diff = now - startDate;
+
+            if (diff < 0) return;
+
+            const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const m = Math.floor((diff / (1000 * 60)) % 60);
+            const s = Math.floor((diff / 1000) % 60);
+
+            document.getElementById('d-val').innerText = d;
+            document.getElementById('h-val').innerText = String(h).padStart(2, '0');
+            document.getElementById('m-val').innerText = String(m).padStart(2, '0');
+            document.getElementById('s-val').innerText = String(s).padStart(2, '0');
+        }
+        setInterval(refreshCounter, 1000);
+        refreshCounter();
+
+        // نظام الترجمة
+        let currentLang = 'ar';
+        function toggleLanguage() {
+            currentLang = currentLang === 'ar' ? 'ua' : 'ar';
+            document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+            document.documentElement.lang = currentLang;
+
+            document.querySelectorAll('[data-ar]').forEach(el => {
+                el.innerText = el.getAttribute(`data-${currentLang}`);
+            });
+
+            const passInput = document.getElementById('passCode');
+            passInput.placeholder = passInput.getAttribute(`data-${currentLang}-ph`);
+            document.getElementById('langBtnText').innerText = currentLang === 'ar' ? 'Українська 🇺🇦' : 'العربية 🇸🇦';
+        }
+
+        function triggerLoveEquation() {
+            document.getElementById('secretModal').style.display = 'flex';
+        }
+
+        function closeSecretMessage() {
+            document.getElementById('secretModal').style.display = 'none';
+        }
+
+        const track = document.getElementById('bgSong');
+        const icon = document.getElementById('audioIcon');
+        const disc = document.getElementById('albumArt');
+        const timerLabel = document.getElementById('timeDisplay');
+
+        function togglePlayMusic() {
+            if (track.paused) startMusic(); else stopMusic();
+        }
+
+        function startMusic() {
+            track.play().then(() => {
+                icon.classList.replace('fa-play', 'fa-pause');
+                disc.style.animationPlayState = 'running';
+            }).catch(() => {});
+        }
+
+        function stopMusic() {
+            track.pause();
+            icon.classList.replace('fa-pause', 'fa-play');
+            disc.style.animationPlayState = 'paused';
+        }
+
+        track.ontimeupdate = () => {
+            const curM = Math.floor(track.currentTime / 60);
+            const curS = Math.floor(track.currentTime % 60);
+            const durM = Math.floor(track.duration / 60) || 0;
+            const durS = Math.floor(track.duration % 60) || 0;
+            timerLabel.innerText = `${curM}:${curS < 10 ? '0'+curS : curS} / ${durM}:${durS < 10 ? '0'+durS : durS}`;
+        };
+    </script>
+</body>
+</html>
